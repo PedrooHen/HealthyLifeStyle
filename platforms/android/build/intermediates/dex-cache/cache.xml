@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Pedro\Desktop\appHack\ioTQuery\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        revision="25.0.3"
+        sha1="db49ed886290075506987e4fa95a93ea33d09fb3">
+        <dex dex="C:\Users\Pedro\Desktop\appHack\ioTQuery\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_b8b10c552acee70fff7faed3d3d415dcd271992c.jar" />
+    </item>
+
+</items>

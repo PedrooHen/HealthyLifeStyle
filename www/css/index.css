@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+*:focus{
+    outline: 0;
+}
+
+.hidden{
+    display: none;
+}
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #c7c7c7;
+}
+
+/*menuLateral*/
+.menuLateral {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.1s;
+}
+    .menuLateral a {
+        padding: 15px 0px 15px 15px;
+        text-decoration: none;
+        font-size: x-large;
+        color: black;
+        display: block;
+    }
+    .menuLateral span {
+        padding: 2px 0px 15px 15px;
+        text-decoration:solid;
+        font-size: 15px;
+        color: gray;
+        display: block;
+    }
+    .menuLateral #iconeFechar {
+        position: absolute;
+        top: -5px;
+        right: 15px;
+        font-size: 36px;
+    }
+    .menuLateral #iconeLogo{
+        position: absolute;
+        top: 0;
+        margin: 10px 15px auto;
+        width: 150px;
+    }
+
+/*barraTopo barraBaixa*/
+.barraTopo {
+    background-color: #317b3d;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    border-bottom: 1px solid;
+    border-bottom-color: white;
+    z-index: 1;
+}
+    .barraTopo span{
+        font-size: 25px;
+        line-height: 75px;
+        color: white;  
+    }
+.barraBaixa {
+    background: #317b3d;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+    .barraBaixa #iconeIOT {
+        position: absolute;
+        width: 150px;
+        height: 50px;
+        left: 40%;
+        top: 50%;
+        margin-left: -37.5px;
+        margin-top: -26px;
+    }
+    
+
+/*telas*/
+#telaCarregamento{
+    z-index: 9999;
+    background: rgba(1,0,1,0.6);
+}
+#imgCarregamento {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+
+/*painel Login*/
+.painelLogin {
+    width: 80%;
+    margin: 75px auto;
+    padding: 5% 5%;
+    background: rgba(1,1,1,0.5);
+    border: 0;
+    border-radius: 4px;
+}
+#imgUserLogin{
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-bottom: 10px;
+}
+#formLogin input {
+    width: 90%;
+    margin-bottom: 2px; 
+    padding: 5%;
+    border: 0;
+    border-radius: 2%;
+}
+#btnEntrar, #btnRegistrarNovoUsuario {
+    width: 100%;
+    border: 0;
+    border-radius: 2%;
+    background-color: #317b3d;
+    color: white;
+    padding: 5%;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+/*painel Novo Usuario*/
+.painelNovoUsuario {
+    width: 80%;
+    margin: 75px auto;
+    padding: 5% 5%;
+    background: rgba(1,1,1,0.5);
+    border: 0;
+    border-radius: 4px;
+}
+#formNovoUsuario input {
+    width: 90%;
+    margin-bottom: 2px;
+    padding: 5%;
+    border: 0;
+    border-radius: 2%;
+}
+#btnConfirmarRegistroUsuario {
+    width: 100%;
+    border: 0;
+    border-radius: 2%;
+    background-color: #317b3d;
+    color: white;
+    padding: 5%;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+/*painel Inicial*/
+.painelInicial {
+    width: 80%;
+    margin: 75px auto;
+    padding: 5% 5%;
+    background: rgba(1,1,1,0.5);
+    border: 0;
+    border-radius: 4px;
+    color: white;   
+}
+.painelInicial p,h1{
+    text-align:center;
+}
+#imgUser {
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    margin-bottom: 10px;
+}
+#btnEditarPerfil {
+    width: 100%;
+    border: 0;
+    border-radius: 2%;
+    background-color: #317b3d;
+    color: white;
+    padding: 5%;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/*painel Editar Perfil*/
+.painelEditarPerfil {
+    width: 80%;
+    margin: 75px auto;
+    padding: 5% 5%;
+    background: rgba(1,1,1,0.5);
+    border: 0;
+    border-radius: 4px;
+    color: white;
+}
+#formEditarPerfil input{
+    width: 90%;
+    margin-bottom: 2px;
+    padding: 5%;
+    border: 0;
+    border-radius: 2%;
+}
+#btnSalvarPerfilEditado {
+    width: 100%;
+    border: 0;
+    border-radius: 2%;
+    background-color: #317b3d;
+    color: white;
+    padding: 5%;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/*ICONES*/
+/*icone Voltar*/
+.iconeVoltar.icone {
+    position: absolute;
+    left: 25px;
+    top: 30px;
+    width: 20px;
+    height: 2px;
+    background-color: white;
+}
+    .iconeVoltar.icone:before {
+        content: '';
+        position: absolute;
+        left: 1px;
+        top: -5px;
+        width: 10px;
+        height: 10px;
+        border-top: solid 2px white;
+        border-right: solid 2px white;
+        -webkit-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+    }
+/**/
+/*icone Menu*/
+.iconeMenu.icone {
+    position: absolute;
+    left: 25px;
+    top: 27px;
+    width: 17px;
+    height: 2px;
+    background-color: white;
+}
+    .iconeMenu.icone:before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: 0;
+        width: 17px;
+        height: 2px;
+        background-color: white;
+    }
+    .iconeMenu.icone:after {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 17px;
+        height: 2px;
+        background-color: white;
+    }
+/**/
+/*icone Editar*/
+.edit.icon {
+    color: black;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    margin-left: -6px;
+    margin-top: -4px;
+    border-radius: 1px;
+    border: solid 1px black;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+    .edit.icon:before {
+        content: '';
+        position: absolute;
+        left: -12px;
+        padding-right: 20%;
+        top: -1px;
+        width: 0px;
+        height: 0px;
+        border-left: solid 5px black;
+        border-right: solid 5px black;
+        border-top: solid 2px black;
+        border-bottom: solid 2px black;
+    }
+/**/
+/*icone Excluir*/
+.trash-solid.icon {
+    color: black;
+    position: absolute;
+    margin-left: -5px;
+    margin-top: -1px;
+    width: 9px;
+    height: 10px;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    border-radius: 0 0 2px 2px;
+    background-color: black;
+}
+
+    .trash-solid.icon:before {
+        content: '';
+        position: absolute;
+        left: -4px;
+        top: -2px;
+        width: 17px;
+        height: 1px;
+        background-color: currentColor;
+    }
+
+    .trash-solid.icon:after {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: -5px;
+        width: 7px;
+        height: 2px;
+        border-left: solid 1px currentColor;
+        border-right: solid 1px currentColor;
+        border-top: solid 1px currentColor;
+        background-color: currentColor;
+        border-radius: 4px 4px 0 0;
+    }   
+/**/
+/*icone OK*/
+.check.icon {
+    color: #000;
+    position: absolute;
+    margin-left: -6px;
+    margin-top: -6px;
+    width: 14px;
+    height: 8px;
+    border-bottom: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+/**/
+/*icone NOK*/
+.remove.icon {
+    color: #000;
+    position: absolute;
+    margin-left: -6px;
+}
+
+    .remove.icon:before {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 1px;
+        background-color: currentColor;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .remove.icon:after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 1px;
+        background-color: currentColor;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }/**/

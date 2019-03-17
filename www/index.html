@@ -1,0 +1,178 @@
+﻿    <!DOCTYPE html>
+<html>
+    <head>
+        <!--METADADOS-->
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+        <!---->
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <title>Healthy Lifestyle</title>
+    </head>
+    <body>
+        <preference name="SplashScreen" value="logo" />
+        <preference name="SplashScreenDelay" value="3000" />
+        <preference name="SplashMaintainAspectRatio" value="false" />
+        <!--Menu Lateral-->
+        <div id="meuMenuLateral" class="menuLateral">
+            <img id="iconeLogo" src="images/logoB.png" />
+            <a id="iconeFechar" onclick="fecharMenuLateral()">&times;</a>
+            <a style="border-top: solid 1px" class="paginaAlvo" dt-page="#telaPrincipal">Healthy LifeStyle</a>
+            <a class="paginaAlvo" dt-page="#telaInicial">Profile</a>
+            <a class="paginaAlvo" dt-page="#telaQuery">Query</a>
+            <a class="paginaAlvo" dt-page="#telaEdit">Edit</a>
+            <a class="paginaAlvo" dt-page="#telaLogin" style="border-bottom: solid 1px">Log Out</a>
+        </div>
+        <!---->
+        <!--Tela Carregamento-->
+        <div id="telaCarregamento" class="page hidden">
+            <img id="imgCarregamento" src="images/load.svg" />
+        </div>
+        <!---->
+        <!--Tela Login-->
+        <div id="telaLogin" class="page">
+            <div class="barraTopo">
+                <span>Welcome</span>
+            </div>
+            <div class="painelLogin">
+                <img id="imgUserLogin" src="images/user.png" />
+                <span style="color: white">Enter your credentials</span>
+                <form id="formLogin">
+                    <input style="margin-top:4px" id="inptEmail" type="text" placeholder="Email" />
+                    <input id="inptSenha" type="password" placeholder="Password" />
+                </form>
+                <button id="btnEntrar" class="paginaAlvo" dt-page="#telaInicial">login</button>
+                <button id="btnRegistrarNovoUsuario" class="paginaAlvo" dt-page="#telaNovoUsuario">create account</button>
+            </div>
+            <div class="barraBaixa">
+                <img id="iconeIOT" src="images/logo.jpg" />
+            </div>
+        </div>
+        <!---->
+        <!--Tela Novo Usuário-->
+        <div id="telaNovoUsuario" class="page hidden">
+            <div class="barraTopo">
+                <span class="iconeVoltar icone paginaAlvo" dt-page='#telaLogin'></span>
+                <span>Create Account</span>
+            </div>
+            <div class="painelNovoUsuario">
+                <span style="color:white">Enter the following information</span>
+                <form id="formNovoUsuario">
+                    <input id="nomeNovoUser" style="margin-top:4px" type="text" placeholder="Full Name *" />
+                    <input id="alturaNovoUser" type="number" placeholder="Altura(cm)" />
+                    <input id="pesoNovoUser" type="number" placeholder="Peso" />
+                    <input id="sexoNovoUser" type="number" placeholder="Sexo" />
+                    <input id="emailNovoUser" type="text" placeholder="Email *" />
+                    <input id="senhaNovoUser" type="password" placeholder="Password *" />
+                </form>
+                <button id="btnConfirmarRegistroUsuario" class="paginaAlvo" dt-page="#telaInicial">Register</button>
+            </div>
+            <div class="barraBaixa">
+                <img id="iconeIOT" src="images/logo.jpg" />
+            </div>
+        </div>
+        <!---->
+        <!--TelaPrincipal-->
+        <div id="telaPrincipal" class="page">
+            <div class="barraTopo">
+                <span class="iconeMenu icone" onclick="abrirMenuLateral()"></span>
+                <span>Healthy LifeStyle</span>
+            </div>
+            <div class="painelInicial">
+                <button id="btnEditarPerfil" class="paginaAlvo" dt-page="#telaInicial">Profile</button>
+                <button id="btnEditarPerfil" class="paginaAlvo" dt-page="#telaConsulta">Query</button>
+                <button id="btnEditarPerfil" class="paginaAlvo" dt-page="#telaEvolucao">Evolution</button>
+                <button id="btnEditarPerfil" class="paginaAlvo" dt-page="#telaEditarPerfil">Edit</button>
+                <button id="btnEditarPerfil" class="paginaAlvo" dt-page="#telaLogin">LogOut</button>
+            </div>
+            <div class="barraBaixa">
+                <img id="iconeIOT" src="images/logo.jpg" />
+            </div>
+        </div>
+        <!--Tela Inicial-->
+        <div id="telaInicial" class="page hidden">
+            <div class="barraTopo">
+                <span class="iconeVoltar icone paginaAlvo" dt-page="#telaPrincipal"></span>
+                <span>Profile</span>
+            </div>
+            <div class="painelInicial">
+                <p>Welcome,</p>
+                <br />
+                <img id="imgUser" src="images/user.png" onclick="recorder.playback()" />
+
+                <h1 style="margin-bottom:10px">Pedro Henrique</h1>
+                <span>EMAIL: pedro.hen@gmail.com</span>
+                <br />
+                <br />
+                <span>HEIGHT: 1.84cm</span>
+                <br />
+                <span>WEIGHT: 75kg</span>
+
+                <span>IMC: 18.19 kg/m²</span>
+                <span>Massa Magra: 50.85 kg</span>
+                <span>Massa Gorda: 2.65 kg</span>
+                <button id="btnEditarPerfil" class="paginaAlvo" dt-page="#telaEditarPerfil">edit profile</button>
+            </div>
+            <div class="barraBaixa">
+                <img id="iconeIOT" src="images/logo.png" />
+            </div>
+        </div>
+        <!---->
+        <!--Tela Editar Perfil-->
+        <div id="telaEditarPerfil" class="page hidden">
+            <div class="barraTopo">
+                <span class="iconeVoltar icone paginaAlvo" dt-page='#telaPrincipal'></span>
+                <span>Edit Profile</span>
+            </div>
+            <div class="painelEditarPerfil">
+                <form id="formEditarPerfil">
+                    <input type="text" placeholder="New name" />
+                    <input type="text" placeholder="email" />
+                    <input type="password" placeholder="Password" />
+                    <input type="number" placeholder="Altura(cm)" />
+                    <input type="number" placeholder="Peso" />
+                </form>
+                <button id="btnSalvarPerfilEditado" class="paginaAlvo" dt-page="#telaPrincipal">Save</button>
+            </div>
+            <div class="barraBaixa">
+                <img id="iconeIOT" src="images/logo.jpg" />
+            </div>
+        </div>
+        <!---->
+        <!--Tela Consulta-->
+        <div id="telaConsulta" class="page hidden">
+            <div class="barraTopo">
+                <span class="iconeVoltar icone paginaAlvo" dt-page='#telaPrincipal'></span>
+                <span>Query</span>
+            </div>
+            <div class="painelEditarPerfil">
+                <form id="formEditarPerfil">
+                    <span>Café da manhã:</span>
+                    <input />
+                    <span>Almoço:</span>
+                    <input />
+                    <span>Café da tarde:</span>
+                    <input />
+                    <span>Jantar:</span>
+                    <input />
+                    <span>Ceia:</span>
+                    <input />
+                </form>        
+            </div>
+            <div class="barraBaixa">
+                <img id="iconeIOT" src="images/logo.jpg" />
+            </div>
+        </div>
+        <!---->
+        <!--JavaScript-->
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+        <script type="text/javascript" src="scripts/index.js"></script>
+        <script type="text/javascript" src="scripts/jquery-3.3.1.js"></script>
+        <script type="text/javascript" src="scripts/Chart.min.js"></script>
+        <script type="text/javascript" src="scripts/meuScript.js"></script>
+    </body>
+</html>
